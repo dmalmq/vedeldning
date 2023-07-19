@@ -1,10 +1,10 @@
 <script lang="ts">
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
-	import '../app.postcss';
-	import { AppShell, AppBar, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
+	import { AppBar, AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
+	import '@skeletonlabs/skeleton/styles/skeleton.css';
+	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+	import '../app.postcss';
 
 	function drawerOpen(): void {
 		drawerStore.open();
@@ -31,7 +31,7 @@
 				<a href="/"><strong class="text-xl uppercase">Vedeldning</strong></a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<ul class="flex gap-4">
+				<ul class="md:flex gap-4 hidden">
 					<li><a class="hover:underline" href="/kaminer">Kaminer</a></li>
 					<li><a href="/spisinsatser">Spisinsatser</a></li>
 					<li><a href="/vedspisar">Vedspisar</a></li>
