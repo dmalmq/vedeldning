@@ -16,6 +16,5 @@
 		<li><a href="/kaminer" on:click={drawerClose}>Kaminer</a></li>
 		<li><a href="/spisinsatser" on:click={drawerClose}>Spisinsatser</a></li>
 		<li><a href="/vedspisar" on:click={drawerClose}>Vedspisar</a></li>
-		<li><a href="/kontakt" on:click={drawerClose}>Kontakt</a></li>
 	</ul>
 </nav>
